@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>123456</string>
+		<key>name</key>
+		<string>Shorts</string>
+		<key>image_name</key>
+		<string>Item-1</string>
+		<key>description</key>
+		<string>Shorsts or 3/4th for workouts or casual wears</string>
+		<key>brand</key>
+		<string>Cotton K</string>
+		<key>type</key>
+		<string>Mens wear</string>
+		<key>color</key>
+		<string>red</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>50</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>CODE-39</string>
+		<key>name</key>
+		<string>Jacket</string>
+		<key>image_name</key>
+		<string>Item-2</string>
+		<key>description</key>
+		<string>Jackets or winter wears</string>
+		<key>brand</key>
+		<string>XYZ</string>
+		<key>type</key>
+		<string>Mens wear</string>
+		<key>color</key>
+		<string>Brown</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>CODE-93</string>
+		<key>name</key>
+		<string>Bag</string>
+		<key>image_name</key>
+		<string>Item-3</string>
+		<key>description</key>
+		<string>Back pack for casual use.</string>
+		<key>brand</key>
+		<string>Puma</string>
+		<key>type</key>
+		<string>Accessories</string>
+		<key>color</key>
+		<string>Gray/Black</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>75</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>CODE-128</string>
+		<key>name</key>
+		<string></string>
+		<key>image_name</key>
+		<string>Item-4</string>
+		<key>description</key>
+		<string>Shoes for jogging or outdoor activities</string>
+		<key>brand</key>
+		<string>Unknown</string>
+		<key>type</key>
+		<string>Mens wear</string>
+		<key>color</key>
+		<string>Black</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>80</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>EAN 128</string>
+		<key>name</key>
+		<string>Mobile</string>
+		<key>image_name</key>
+		<string>Item-5</string>
+		<key>description</key>
+		<string>Cell Phone for making calls with built in camera, music player and internet connectivity.</string>
+		<key>brand</key>
+		<string>CellOne</string>
+		<key>type</key>
+		<string>Mobile</string>
+		<key>color</key>
+		<string>Black</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>150</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>12345678901234</string>
+		<key>name</key>
+		<string>Watch</string>
+		<key>image_name</key>
+		<string>Item-6</string>
+		<key>description</key>
+		<string>Wrist Watch </string>
+		<key>brand</key>
+		<string>Flippd</string>
+		<key>type</key>
+		<string>Accessories Men</string>
+		<key>color</key>
+		<string>Black/White</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>200</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>123456</string>
+		<key>name</key>
+		<string>Sun Glasses</string>
+		<key>image_name</key>
+		<string>Item-7</string>
+		<key>description</key>
+		<string>Sun glasses with metal frame.</string>
+		<key>brand</key>
+		<string>Polaroids</string>
+		<key>type</key>
+		<string>Accessories Men</string>
+		<key>color</key>
+		<string>Golden/Gray</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>300</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>012345</string>
+		<key>name</key>
+		<string>Belt</string>
+		<key>image_name</key>
+		<string>Item-8</string>
+		<key>description</key>
+		<string>Unisex Belt</string>
+		<key>brand</key>
+		<string>XYZ</string>
+		<key>type</key>
+		<string>Accessories</string>
+		<key>color</key>
+		<string>Brown/Gray</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>25</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>0000000</string>
+		<key>name</key>
+		<string>Blue Jean</string>
+		<key>image_name</key>
+		<string>Item-9</string>
+		<key>description</key>
+		<string>My cool blue jean</string>
+		<key>brand</key>
+		<string>Jean</string>
+		<key>type</key>
+		<string>Mens wear</string>
+		<key>color</key>
+		<string>blue</string>
+		<key>quantity</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>50</string>
+	</dict>
+</array>
+</plist>

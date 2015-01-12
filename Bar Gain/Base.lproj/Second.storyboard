@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SGt-M3-yLb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--how to?-->
+        <scene sceneID="985-fA-9gR">
+            <objects>
+                <pageViewController storyboardIdentifier="InstructionPageView" autoresizesArchivedViewToFullSize="NO" title="how to?" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="XkL-a5-WOB" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="937-aQ-foS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="-1512"/>
+        </scene>
+        <!--Content Page View Controller-->
+        <scene sceneID="XlB-lw-lk4">
+            <objects>
+                <viewController storyboardIdentifier="ContentPageView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V9n-WK-Sj0" customClass="ContentPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ji9-hK-Na1"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Cv-9c-YT8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7lu-Rd-YgF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ7-YW-w1o">
+                                <rect key="frame" x="84" y="922" width="58" height="58"/>
+                                <color key="backgroundColor" red="0.7254902124" green="0.043137256059999997" blue="0.058823533359999999" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" image="logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissButton:" destination="V9n-WK-Sj0" eventType="touchUpInside" id="YGw-fc-MhF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17t-Ae-96y">
+                                <rect key="frame" x="354" y="922" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="NextInfo">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="voJ-Jx-stY">
+                                <rect key="frame" x="84" y="70" width="600" height="800"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74730383830000002" green="0.0" blue="0.061518245550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btnNextPage" destination="17t-Ae-96y" id="PFg-Yg-pUt"/>
+                        <outlet property="imageInfo" destination="voJ-Jx-stY" id="K3A-Dh-G34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMg-KB-bND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2697" y="-1512"/>
+        </scene>
+        <!--Stores Nearby-->
+        <scene sceneID="jmi-2O-DFN">
+            <objects>
+                <viewController title="Stores Nearby" id="SGt-M3-yLb" customClass="NearByStoresViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gXq-ut-jFe"/>
+                        <viewControllerLayoutGuide type="bottom" id="TvU-ot-71C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nCp-32-5Pf">
+                        <rect key="frame" x="0.0" y="94" width="600" height="506"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Byk-T3-BS0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0wV-bQ-mpf">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="8MH-74-q31" customClass="StoresNBCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcg-gT-eTG">
+                                                    <rect key="frame" x="25" y="8" width="100" height="100"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFB-aL-NCF">
+                                                    <rect key="frame" x="8" y="121" width="134" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.85165700600000005" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="imageViewStores" destination="Pcg-gT-eTG" id="k6Z-7f-MLx"/>
+                                            <outlet property="labelStores" destination="HFB-aL-NCF" id="ICd-lk-g04"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="SGt-M3-yLb" id="ftg-2y-vMV"/>
+                                    <outlet property="delegate" destination="SGt-M3-yLb" id="dCo-Mv-0ch"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TvU-ot-71C" firstAttribute="top" secondItem="Byk-T3-BS0" secondAttribute="bottom" id="4HE-ax-eNF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Byk-T3-BS0" secondAttribute="trailing" constant="-16" id="e90-Ch-fbi"/>
+                            <constraint firstItem="Byk-T3-BS0" firstAttribute="leading" secondItem="nCp-32-5Pf" secondAttribute="leadingMargin" constant="-16" id="fXo-fg-vfI"/>
+                            <constraint firstItem="Byk-T3-BS0" firstAttribute="top" secondItem="gXq-ut-jFe" secondAttribute="bottom" id="hIc-D4-v2u"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbB-2z-5yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="267"/>
+        </scene>
+        <!--Common Base Class-->
+        <scene sceneID="zJ6-F5-OQU">
+            <objects>
+                <viewController storyboardIdentifier="CommonBaseClass" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M08-UO-Lr6" customClass="CommonBaseClass" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PVq-e9-TBF"/>
+                        <viewControllerLayoutGuide type="bottom" id="DfX-Wr-Bvh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jn0-pi-Uzr">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.46507830059999999" blue="0.46761115869999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rk-IF-ugJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="-125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NextInfo" width="50" height="50"/>
+        <image name="logout" width="57" height="58"/>
+    </resources>
+</document>
